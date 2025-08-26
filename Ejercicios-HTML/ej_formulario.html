@@ -10,34 +10,57 @@
         }
     </style>
 </head>
-<body>
-<!--Cree un Formulario con los campos que se proponen a continuacion-->
-<!--Agregue el atributo legend-->
+<body style="background-color: whitesmoke; text-align: center;">
 
-<!--Si tienes dudas de como hacer un formulario, puedes consultar:
-    https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_output-->
+<h1 style="color: darkred; text-align: center;"><u>Suscribase a Nuestro Portal de Noticias! Crear una cuenta es rápido!</u></h1>
+<br>
+<form id="formulario1">
 
-<h3>Suscribase a Nuestro Portal de Noticias! Crear una cuenta es rápido!</h3>
-Nombre:
-Apellido:
-Sexo: Masculino Femenino
-Edad:
-Email:
-Usuario:
-Password:
-Confirmar Password:
+<p>
+<label for=" nombre"></label>Nombre: <input type="text" name="Nombre";id="nombre    " placeholder="Ingrese su nombre"; maxlength="20">
+</p>
+<p>
+Apellido: <input type="text" name="Apellido"; placeholder="Ingrese su apellido"; maxlength="20">
+</p>
+<p>
+<u style="color:darkblue;">Sexo</u>: Masculino <input type="radio" name="sexo" value="Masculino"> 
+      Femenino<input type="radio" name="sexo" value="Femenino"> 
+</p>
+<p>
+<u>Edad</u>: <input type="number" name="edad" placeholder="ingrese su edad"; maxlength="3">
+</p>
+<p>
 
-Tipo de servicio: Free / Standard / Premium
-Tema:
-Política
-Negocios
-Tecnología
-Salud
+<u>Email</u>: <input type="email" name="email" placeholder="indique su email">
+</p>
+<p>
+<u>Usuario</u>: <input type="text"; name="Usuario", maxlength="15"; placeholder="indique su usuario">
+</p>
+<p>
+<u><strong>Password</strong></u>: <input type="password", name="password", maxlength="10", placeholder="Password">
+</p>
+<p>
+<u><strong>Confirmar Password</strong></u>:<input type="password", name="Confirmar Password", maxlength="10", placeholder="Password">
+</p>
+<p>
+<u><strong>Tipo de servicio</strong></u>: Free <input type="checkbox" name="tipo de servicio" value="Free">/ Standard <input type="checkbox" name="tipo de servicio" value="Standard"> / Premium <input type="checkbox", name="tipo de servicio" value="Premium">
+</p>
+<p>
+<label for="select1">Tema: </label>
+<select name="Tema" id="select1">
+  <option value="Politica">Politica</option>
+  <option value="Negocios">Negocios</option>
+  <option value="Tecnología">Tecnología</option>
+  <option value="Salud">Salud</option>
+</select>
+<p>
+<u>Agregue un comentario</u>: <textarea name="textarea" id="text1" placeholder="Ingrese su opinión" maxlength="100"></textarea>
+</p>
+<p>
+<button type="button">Boton de envio</button>
+</p>
 
-Agregue un comentario:
-
-Boton de Enviar
-
+</form>
 
 </body>
 </html>
